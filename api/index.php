@@ -6,7 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Crédito Direto ao Consumidor</title>
-    <link rel="stylesheet" href="./style/index.css">
+
+    <style>
+        .box {
+            background-color: antiquewhite;
+            box-shadow: 8px 8px 6px grey;
+            width: 450px;
+            border-style: solid;
+            border-width: 3px;
+            border-color: lightblue;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            margin-left: 2px;
+        }
+        body {
+            background-color: #f0f0f2;
+            margin: 0;
+            padding: 2em;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont,
+                "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial,
+                sans-serif;
+        }
+        input {
+            margin: 10px 3px 10px 3px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            font-size: 12px;
+            padding: 5px 5px 5px 5px;
+        }
+        label {
+            position: relative;
+            top: 12px;
+            width: 190px;
+            float: left;
+        }
+        #submitButton {
+            width: 80px;
+            margin-left: 20px;
+        }
+        #errorMessage {
+            color: red;
+            font-size: 90% !important;
+        }
+        #successMessage {
+            color: green;
+            font-size: 90% !important;
+            display: block;
+            margin-top: 20px;
+        }
+        .button {
+            font-size: 13px;
+            color: red;
+            background-color: #f8fad7;
+        }
+        .button:hover {
+            background-color: #fadad7;
+        }
+        .main-box {
+            border: 1px black solid;
+            background-color: #cac3ba;
+            width: 400px;
+        }
+        input.currency {
+            text-align: left;
+            padding-right: 15px;
+        }
+        .input-group .form-control {
+            float: none;
+        }
+        .input-group .input-buttons {
+            position: relative;
+            z-index: 3;
+        }
+        .messages {
+            text-align: center;
+        }
+        .legend-box {
+            border: 5px lightblue solid;
+            margin-left: 1em;
+            background-color: #ff6347;
+            padding: 0.2em 0.8em;
+        }
+
+        table {
+            text-align: center;
+            border-top: 2px dashed black;
+        }
+
+        tbody tr td, thead tr th {
+            padding: 10px 30px;
+            border-left: 2px dashed black;
+            border-right: 2px dashed black;
+            border-bottom: 2px dashed black;
+        }
+
+        tfoot td {
+            border: 2px solid black;
+        }
+    </style>
     
     <script>
         document.addEventListener("DOMContentLoaded", function () {
